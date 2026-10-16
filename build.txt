@@ -1,3 +1,4 @@
 displayName = 错数工具集
-author = 工具拉姆达
+author = 错数螺线
 version = 0.1
+dllReferences = SilkyUIFramework

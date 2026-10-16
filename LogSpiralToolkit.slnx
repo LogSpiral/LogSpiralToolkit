@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="../SilkyUIAnalyzer/SilkyUIAnalyzer.csproj" />
+  <Project Path="../SilkyUIFramework/SilkyUIFramework.csproj" />
   <Project Path="LogSpiralToolkit.csproj" />
 </Solution>
