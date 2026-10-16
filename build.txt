@@ -1,0 +1,3 @@
+displayName = 错数工具集
+author = 工具拉姆达
+version = 0.1
