@@ -7,6 +7,7 @@
 	<PropertyGroup>
 		<SUIBinDir>..\SilkyUIFramework\bin\$(Configuration)\$(TargetFramework)\</SUIBinDir>
 		<SUIDir>..\SilkyUIFramework\</SUIDir>
+		<DebugMod>;</DebugMod>
 	</PropertyGroup>
 
 	<!-- References -->
@@ -14,7 +15,8 @@
 	<Target Name="CopySelectedDlls" BeforeTargets="Build">
 		<ItemGroup>
 			<DllsToCopy Include="$(SUIBinDir)SilkyUIFramework.dll" Condition="Exists('$(SUIBinDir)SilkyUIFramework.dll')" />
-			<AssetsToCopy Include="$(SUIDir)\Assets\**\*.*" />
+			<AssetsToCopy Include="$(SUIDir)\**\*.png" />
+			<AssetsToCopy Include="$(SUIDir)\**\*.fx" />
 		</ItemGroup>
 
 		<Copy SourceFiles="@(DllsToCopy)" DestinationFolder=".\lib" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" />
@@ -28,6 +30,13 @@
 			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 		</ProjectReference>
 		<ProjectReference Include="..\SilkyUIFramework\SilkyUIFramework.csproj" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+		<PackageReference Include="Solaestas.tModLoader.ModBuilder" Version="1.6.1" />
+		<PackageReference Include="SixLabors.ImageSharp" Version="3.1.11" />
 	</ItemGroup>
-
+	<ItemGroup>
+		<AdditionalFiles Include="**/*.sui.xml" Exclude="bin/**/*;obj/**/*;.git/**/*;.idea/**/*;.vs/**/*" Pack="true" ModPath="%(Identity)" />
+		<AdditionalFiles Include="**/*.txt" Exclude="bin/**/*;obj/**/*;.git/**/*;.idea/**/*;.vs/**/*" Pack="true" ModPath="%(Identity)" />
+	</ItemGroup>
 </Project>
