@@ -5,11 +5,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
 
-   <path d="M 17.5 12.5 l -17 -5 l 12 -7 l 17 5 l -12 7 z" fill="none" stroke="white" stroke-width="0.5"/>
+   <path d="m 17.5 12.5 l -17 -5 l 12 -7 l 17 5 l -12 7 z" fill="none" stroke="white" stroke-width="0.5"/>
 
-   <path d="M 17.5 12.5 l -17 -5 l 0 17 l 17 5 l 0 -17 z" fill="none" stroke="white" stroke-width="0.5"/>
+   <path d="m 17.5 12.5 l -17 -5 l 0 17 l 17 5 l 0 -17 z" fill="none" stroke="white" stroke-width="0.5"/>
 
-   <path d="M 17.5 12.5 l 12 -7 l 0 17 l -12 7 l 0 -17 z" fill="none" stroke="white" stroke-width="0.5"/>
+   <path d="m 17.5 12.5 l 12 -7 l 0 17 l -12 7 l 0 -17 z" fill="none" stroke="white" stroke-width="0.5"/>
 
-   <path d="M 17.5 12.5 m -17 -5 m 0 17 m 12 -7 l -12 7 m 12 -7 l 0 -17 m 0 17 l 17 5 m -17 -5 z" fill="none" stroke="white" stroke-width="0.5"/>
+   <path d="m 17.5 12.5 m -17 -5 m 0 17 m 12 -7 l -12 7 m 12 -7 l 0 -17 m 0 17 l 17 5 m -17 -5 z" fill="none" stroke="white" stroke-width="0.5"/>
 </svg>
